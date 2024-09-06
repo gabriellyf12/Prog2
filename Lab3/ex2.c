@@ -71,7 +71,7 @@ void le_dados(int **matriz, int l, int c){
 void imprime_matriz(int **matriz, int l, int c){
     for (int i = 0; i < l; i++){
         for (int j = 0; j < c; j++){
-            printf("Elemento [%d][%d] = %d \n", i, j, matriz[i][j]);
+            printf("Elemento [%d][%d] = %d \n", i, j, *(*(matriz + i) + j));
         }
     }
 }
