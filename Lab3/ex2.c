@@ -20,7 +20,7 @@ int main (void) {
     puts("Qual o numero de colunas?");
     scanf("%d",&col);
 
-    printf("Alocando espaço para linhas.\n");
+    printf("Alocando eApresentaçãospaço para linhas.\n");
     aloca_colunas(matriz, lin, col);
     le_dados(matriz, lin, col);
     imprime_matriz(matriz, lin, col);
