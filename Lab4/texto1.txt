@@ -1,0 +1,3 @@
+Este eh um exemplo de arquivo de entrada
+O importante eh contar as vogais
+caso uma vogal nao apareca, exibir zero
