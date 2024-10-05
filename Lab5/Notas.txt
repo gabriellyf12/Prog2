@@ -1,0 +1,2 @@
+Nome: Gabrielly P1: 10.0 P2: 10.0 T: 10.0
+Nome: Mariana P1: 10.0 P2: 10.0 T: 10.0
