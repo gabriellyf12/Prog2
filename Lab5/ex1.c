@@ -20,7 +20,7 @@ int main () {
     for (int i = 0; i < numAlunos; i++){
         scanf("%s", nome);
         scanf("%f %f %f", &p1, &p2, &T);
-        fprintf(arq, "Nome: %s P1: %.1f P2: %.1f T: %.1f\n", nome, p1, p2, T);
+        fprintf(arq, "%s %.1f %.1f %.1f\n", nome, p1, p2, T);
     }
     
     

@@ -57,8 +57,6 @@ void exibe (FILE *pFile){
     while (fread(&p, sizeof(Tpessoa), 1, pFile) == 1){
         printf("%s - %d anos \n", p.nome, p.idade);
     }
-    
-    
 }
 
 int main() {
