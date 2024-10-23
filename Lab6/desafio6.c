@@ -11,8 +11,7 @@ int grava (FILE *pFile, int N){
     Tpessoa p;
     int gravados = 0;
 
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 0; i < N; i++) {
         scanf("%s", p.nome);
         scanf("%d", &p.idade);
         if(fwrite(&p, sizeof(Tpessoa), 1, pFile) != 1) {
@@ -20,7 +19,6 @@ int grava (FILE *pFile, int N){
         }
         gravados++;
     }
-
     return gravados;
 }
 
@@ -32,22 +30,17 @@ int modifica (FILE *pFile, int M, int idade){
     if (M < 1 || M > tamanho) {
         return -1; 
     }
-    
     fseek(pFile, (M - 1) * sizeof(Tpessoa), SEEK_SET);
-    
     if (fread(&p, sizeof(Tpessoa), 1, pFile) != 1) {
         return 0; 
     }
-    
     p.idade = idade;
     fseek(pFile, (M - 1) * sizeof(Tpessoa), SEEK_SET);
     if (fwrite(&p, sizeof(Tpessoa), 1, pFile) != 1) {
         return 0; 
     }
-    
     return 1;
-    
-    }
+}
 
 void exibe (FILE *pFile){
     Tpessoa p;
